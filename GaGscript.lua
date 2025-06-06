@@ -9,7 +9,7 @@ local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 local Window = Rayfield:CreateWindow({
     Name = "GaG script",
     LoadingTitle = "Dupe Script",
-    LoadingSubtitle = "make by hk99,
+    LoadingSubtitle = "make by hk99",
     Theme = "Default",
     DisableRayfieldPrompts = false,
     ConfigurationSaving = { Enabled = false },
